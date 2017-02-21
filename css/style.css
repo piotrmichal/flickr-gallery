@@ -8,7 +8,7 @@ body {
 }
 
 header {
-	margin-left: 30px;
+	margin: 0 30px;
 }
 
 .wrapper {
@@ -16,6 +16,7 @@ header {
 	margin: 70px auto;
 	border-radius: 5px;
 	width: 90%;
+	max-width: 1200px;
 	border: 1px solid #AAA;
 	box-shadow: 0 0 15px #CCC;
 }
@@ -56,8 +57,7 @@ main {
 
 h2 {
 	display: inline-block;
-	margin-top: 25px;
-	margin-bottom: 10px;
+	margin: 25px 25px 10px 0;
 }
 
 ul {
@@ -65,9 +65,14 @@ ul {
 	margin: 10px 0 20px;
 }
 
+li {
+	margin: 0 15px 30px 15px;
+}
+
 .imgBox {
 	list-style-type: none;
-	justify-content: space-between;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .card {
@@ -85,9 +90,7 @@ ul {
 
 .gallery p {
 	float: right;
-	margin-top: 30px;
-	margin-bottom: 10px;
-	padding-right: 15px;
+	margin: 30px 15px 10px 0;
 }
 
 .gallery p a {
@@ -104,4 +107,38 @@ ul {
 	clear: both;
 	content: '';
 	display: flex;
+}
+
+@media screen and (max-width: 525px) {
+	header {
+		margin: 0 15px;
+	}
+
+	h1 {
+		font-size: 26px;
+	}
+
+	h2 {
+		font-size: 20px;
+		margin-right: 40px;
+	}
+
+	form {
+		margin: 0 15px;
+	}
+
+	.gallery p {
+		float: left;
+		margin: 15px 15px 10px 0;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	input[type='text'] {
+		width: 135px;
+	}
+
+	main {
+		margin: 0 15px 25px 15px;
+	}
 }
