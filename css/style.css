@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: #EFEFEF;
+	background-color: #202020;
 }
 
 header {
@@ -14,11 +14,11 @@ header {
 .wrapper {
 	background-color: #FFF;
 	margin: 70px auto;
-	border-radius: 5px;
+	border-radius: 3px;
 	width: 90%;
 	max-width: 1200px;
 	border: 1px solid #AAA;
-	box-shadow: 0 0 15px #CCC;
+	box-shadow: 0 0 15px #AAA;
 }
 
 form {
@@ -27,23 +27,23 @@ form {
 
 input[type='text'] {
 	border-radius: 3px;
-	background-color: #EfEFEF;
+	background-color: #EFEFEF;
 	padding: 5px;
-	border: 1px solid #480581;
+	border: 1px solid #250200;
 }
 
 button {
 	border-radius: 3px;
-	background-image: linear-gradient(#AC2AD1, #480581);
+	background-image: linear-gradient(#DE4F47, #250200);
 	color: #FFF;
 	font-weight: bold;
 	padding: 5px 20px;
-	border: 1px solid #480581;
+	border: 1px solid #610500;
 }
 
 button:hover {
 	cursor: pointer;
-	background-image: linear-gradient(#9D06C8, #270148);
+	background-image: linear-gradient(#C9322A, #0D0100);
 }
 
 .remove {
@@ -76,7 +76,7 @@ li {
 }
 
 .card {
-	background-image: linear-gradient(#9D06C8, #270148);
+	background-color: #250200;
 	padding: 2px;
 	border-radius: 2px;
 	opacity: .8;
@@ -94,12 +94,12 @@ li {
 }
 
 .gallery p a {
-	color: #9604BF;
+	color: #760600;
 	text-decoration: none;
 }
 
 .gallery p a:hover {
-	color: #480581;
+	color: #250200;
 	text-decoration: underline;
 }
 
